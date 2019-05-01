@@ -1,0 +1,8 @@
+<ul>
+  <li *ngFor="let item of list;let last = last;">
+    <a src="javascript:void(0)">{{item.name}}</a>
+    <div *ngIf="!last">
+      >
+    </div>
+  </li>
+</ul>

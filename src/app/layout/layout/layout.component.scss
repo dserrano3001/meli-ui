@@ -1,0 +1,17 @@
+.container {
+
+  mat-toolbar {
+    background-color: #fff159;
+    height: 100px;
+
+    > div {
+      width: 100%;
+      .logo {
+        text-align: right;
+      }
+    }
+    
+  }
+}
+
+

@@ -1,0 +1,16 @@
+ul {
+  li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+
+    >a {
+      display: inline-block;
+    }
+
+    >div {
+      display: inline-block;
+      margin-left: 10px;
+    }
+  }
+}

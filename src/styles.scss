@@ -1,1 +1,78 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #ebebeb;
+}
+
+.mat-form-field-wrapper {
+  padding-bottom: 0;
+}
+
+mat-form-field {
+  .mat-form-field-wrapper {
+    div.mat-form-field-infix {
+      padding: .5em 0;
+      border-top: 10px solid transparent;
+      padding-top: 10px;
+      padding-bottom: 16px;
+    }
+
+    div.mat-form-field-suffix {
+      position: absolute;
+      bottom: 1px;
+      top: 6px;
+      right: 1px;
+      border-left: 1px solid #ddd;
+      background: #f3f3f3;
+      border-bottom-right-radius: 4px;
+      border-top-right-radius: 4px;
+      width: 50px;
+      text-align: center;
+
+      cursor: pointer;
+
+      mat-icon {
+        padding-top: 10px;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline-thick {
+  color: transparent;
+}
+
+.mat-badge-medium.mat-badge-after .mat-badge-content {
+  right: -40px;
+}
+
+.mat-badge-medium.mat-badge-above .mat-badge-content {
+  top: -25px;
+}
+
+.mat-badge-medium .mat-badge-content {
+  width: 50px;
+  height: 22px;
+  line-height: 22px;
+  border-radius: 4px;
+}
+
+
+.title_no_data{
+  text-align: center;
+  font-size: 20px;
+}

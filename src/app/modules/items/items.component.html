@@ -1,0 +1,35 @@
+<div class="container">
+  <breadcrumb [list]="itbreadcrumb"></breadcrumb>
+
+  <mat-spinner *ngIf="loading"></mat-spinner>
+
+
+  <div fxLayout="column" fxLayoutAlign="space-around center" *ngIf="!loading">
+    <div class="cards">
+      <h4 class="title_no_data" *ngIf="!loading && itemList.length === 0">No hay datos</h4>
+      <mat-card *ngFor="let item of itemList">
+        <div fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+          <div fxFlex="30" fxFlex.gt-sm="30">
+            <a [routerLink]="['items',item.id]"><img src="{{item.picture}}" alt="" class="item-image"></a>
+          </div>
+          <div fxFlex="45" fxFlex.gt-sm="45" class="info-item">
+            <div class="info-price">
+              <span class="price">{{item.price.amount | currency:item.price.currency:'symbol-narrow':'2.0'}}</span>
+              <span class="price_decimals">{{getDecimals(item.price.decimals)}}</span>
+            </div>
+            <div class="info-tittle">
+              <a [routerLink]="['items',item.id]" class="_link_btn">{{item.title}}</a>
+            </div>
+            <div class="info-shipping" *ngIf="!item.free_shipping">
+              <span>Envío gratis</span>
+            </div>
+          </div>
+          <div fxFlex="25" fxFlex.gt-sm="25" class="div-status" fxLayout="column" fxLayoutAlign="start center">
+            <span *ngIf="item.condition === 'new'">Nuevo</span>
+            <span *ngIf="item.condition !== 'new'">Usado</span>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</div>
