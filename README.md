@@ -35,6 +35,10 @@ Escribe `npm run start` para levantar el servidor de desarrollo. En el navegador
 
 Escribe `ng build` para compilar el proyecto. El resultado de la compilación del proyecto se hará en el directorio `dist/`. Usa el flag `--prod` para crear el build para producción.
 
+## Prerender
+
+Escribe `npm run build:prerender` para crear una vista estática de la aplicación, para resolver los problemas de SEO, el proyecto se creará en el directorio `dist/static` .
+
 ## Construido con 🛠️
 
 * [Angular](https://angular.io/)
