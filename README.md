@@ -1,27 +1,43 @@
-# MeliUi
+# Mercado Libre UI
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+Listado, búsqueda y detalles de productos
 
-## Development server
+## Comenzando 🚀
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-## Code scaffolding
+Mira **Deployment** para conocer como desplegar el proyecto.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Pre-requisitos 📋
 
-## Build
+_Que cosas necesitas para instalar el proyecto y como instalarlas_
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- Node (v11), te recomendamos usar [nvm](https://github.com/creationix/nvm)
+- [Angular CLI](https://github.com/angular/angular-cli/wiki)
 
-## Running unit tests
+### Instalación 🔧
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Una vez clonado el proyecto, ve a la carpeta y ejecuta: 
 
-## Running end-to-end tests
+_Dí cómo será ese paso_
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+```
+npm install
+```
 
-## Further help
+Este comando hará la instalación de los paquetes necesarios para levantar el proyecto.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Servidor de desarrollo 💻
+
+Escribe `npm run start` para levantar el servidor de desarrollo. En el navegador ve a `http://localhost:4200/`.  La app se recargará automáticamete cuando ocurra un cambio en algun archivo.
+
+## Deployment 📦
+
+Escribe `ng build` para compilar el proyecto. El resultado de la compilación del proyecto se hará en el directorio `dist/`. Usa el flag `--prod` para crear el build para producción.
+
+## Construido con 🛠️
+
+* [Angular](https://angular.io/)
+* [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.
+
+Para conocer más información sobre Angular CLI usa `ng help` o mirá  [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

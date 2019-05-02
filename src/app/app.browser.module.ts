@@ -11,7 +11,6 @@ import { AppModule } from './app.module';
 
 @NgModule({
   imports: [
-    
     SharedModule,
     BrowserAnimationsModule,
     AppRoutingModule,

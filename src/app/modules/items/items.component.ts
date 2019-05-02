@@ -19,10 +19,6 @@ export class ItemsComponent implements OnInit {
   error = '';
 
   constructor(private appService: AppService, private route: ActivatedRoute) {
-    this.itbreadcrumb.push({
-      name: 'items',
-      url: 'items'
-    });
   }
 
   ngOnInit() {
@@ -37,10 +33,15 @@ export class ItemsComponent implements OnInit {
       (result: DataResponse<Items>) => {
         this.itemList = result.data.items;
         this.loading = false;
-        this.itbreadcrumb.push({
+        this.itbreadcrumb = [
+          {
+            name: 'items',
+            url: 'items'
+          },
+          {
           name: result.data.breadcrumb[0],
           url: ''
-        });
+        }];
       },
       error => {
        console.log(error);
@@ -48,7 +49,7 @@ export class ItemsComponent implements OnInit {
     );
   }
 
-  public getDecimals(value){
+  public getDecimals(value) {
     const decimals = value.toString().length === 1 ? value + '0' : value.toFixed(2);
     return decimals;
   }
